@@ -1,0 +1,107 @@
+div#tweets{
+    border: 1px solid rgba(15,70,100,.12) !important;
+    border-radius: 10px;
+    max-width: 100%;
+    font-family: Helvetica,Roboto,"Segoe UI",Calibri,sans-serif !important;
+    color: #292F33 !important;
+}
+div#tweets a{
+    color:#2b7bb9;
+    font-weight: bold;
+}
+div#tweets .tweet:last-child {
+    border-bottom: none;
+}
+.tweet{
+    display: flex; 
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(15,70,100,.12) !important;
+    padding: 1%;
+}
+p#hash {
+    margin-top: 0;
+    padding-top: 1%;
+    border-bottom: 1px solid rgba(15,70,100,.12) !important;
+    width: 100%;
+    padding-bottom: 1%;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 1%;
+    margin-bottom: 0;
+}
+.tweet-user {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.tweet-user > .profile {
+    display: flex;
+    align-items: center;
+    flex-basis: 75%;
+}
+.tweet-user > .profile > .user-name{
+    text-align: left;
+    padding-left: 4%;
+}
+.tweet-user > .profile > .user-name{
+    flex-basis: 50%;
+   
+}
+.tweet-user > .profile > .user-name-link{
+    color: #292F33;
+    font-weight: bold;
+}
+.tweet-user > .profile > .user-name-link:hover, p#hash a:hover, a.user-name-link:hover{
+    color:#2b7bb9 !important;
+}
+.tweet-user > .profile img {
+    flex-basis: 20%;
+    max-width: 60px;
+}
+.tweet-user > .tweet-date{
+    flex-basis: 25%;
+    text-align: right;
+}
+/*
+* cs
+*/
+.tweet:hover {
+    background-color: #f5f8fa;
+}
+p#hash a, a.user-name-link {
+    color: #292F33 !important;
+}
+p#hash span {
+    float: right;
+    width: 32px;
+    height: 32px;
+    margin-right: 1%;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-top: -5px;
+}
+p#hash span img{
+    max-width: 100%;
+}
+.tweet-date {
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 12%;
+}
+p.text-twit {
+    padding-left: 12%;
+}
+.tweet-hash {
+    flex-basis: 100%;
+    padding-left: 12%;
+    color:#2b7bb9 !important;
+    font-weight: bold;
+}
+.tweet-hash span {
+    display: inline-block;
+    margin-right: 1%;
+}
+a.username-link {
+    color: #2b7bb9 !important;
+}
