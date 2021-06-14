@@ -53,6 +53,9 @@
                             <li class="list-group-item">
                                 <a href="#config-1">Configuración</a>
                             </li>
+                            <li class="list-group-item">
+                                <a href="#front">Mostrar Tweets en Front</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="col-md-9 col-12 content-main">
@@ -62,52 +65,74 @@
                                 Para instalar el plugin, primero debe clonarlo o descargarlo de este repositorio:
                             </p>
                             <p>
-                                <a href="https://github.com/genosha-tech/ta-suscripciones" target="_blank"
+                                <a href="https://github.com/matezito/tweets-search" target="_blank"
                                     class="btn btn-dark btn-lg"><i class="bi bi-github"></i> GitHub</a>
                             </p>
                             <p>Clonar:
                                 <br />
-                            <pre>$ git clone https://github.com/genosha-tech/ta-suscripciones</pre>
+                            <pre>$ git clone https://github.com/matezito/tweets-search</pre>
                             </p>
                             <p>Descargar: en la pestaña code boton code (verde) del repositorio, descargar desde
                                 <strong>Download ZIP</strong> como se muestra en la imagen:<br>
                                 <img src="img/img1.png" class="img-fluid">
                             </p>
                             <p>
-                                Una vez clonado o descargado, se debe mover la carpeta <strong>subscriptions</strong> al
+                                Una vez clonado o descargado, se debe mover la carpeta <strong>tweets-search</strong> al
                                 directorio<br />
                             <pre>wp-content/plugins</pre>
                             <br> de su instalación de Wordpress.
                             </p>
                             <p class="fst-italic small bg-light p-3 rounded">
                                 <strong>IMPORTANTE</strong><br />
-                                Tenga en cuenta que la carpeta <strong>subscriptions-main</strong> debe ser renombrada a
-                                <strong>subscriptions</strong> o puede haber problemas con la instalación.
+                                Tenga en cuenta que la carpeta <strong>tweets-search-main</strong> debe ser renombrada a
+                                <strong>tweets-search</strong> o puede haber problemas con la instalación.
                             </p>
                             <p>
                                 Una vez que se descomprime y renombra la carpeta, nos dirigimos a la lista de plugins,
-                                buscamos <strong>Subscriptions</strong> o <strong>Suscripciones</strong>(según su
-                                idioma) y lo activamos.<br />
-                                <img src="img/img2.png" class="img-fluid mt-3">
+                                buscamos <strong>Tweets Search</strong> y lo activamos.<br />
+                                <img src="img/img2.png" class="img-fluid mt-3"><br />
                                 <span class="fst-italic small d-block p-3 rounded bg-light mt-2 ">
                                     Más información sobre manejo de plugins (en Inglés):<br />
                                     <a href="https://wordpress.org/support/article/managing-plugins/"
                                         target="_blank">Wordpress Codex Plugins</a>
                                 </span>
                             </p>
-                            <p>
-                                Se debe extender las funciones con el plugin User Panel, especialmente creado para
-                                acompañar a Suscriciones.<br />
-                                El plugin se puede descargar o clonar de este repositorio: <br />
-                                <a href="https://github.com/matezito/ta-user-panel" target="_blank"
-                                    class="btn btn-dark btn-lg mt-3 mb-3"><i class="bi bi-github"></i> GitHub</a>
-                            </p>
-                            <p>Al igual que con Suscripciones, una vez clonado o descomprimido, se debe renombrar la
-                                carpeta a <strong>user-panel</strong> y pasarla a <strong
-                                    class="fst-italic">wp-content/plugins</strong>, luego activar el plugin desde la
-                                lista de plugins de la instalación de Wordpress.</p>
                         </div>
                         <hr class="mt-5 mb-5">
+                        <div id="config-1">
+                            <h4>Configuración</h4>
+                            <p>
+                                Para configurar el plugin necesitamos la <strong>Bearer Token</strong> de desarrollador de Twitter.<br />
+                                Para obtener la <strong>Bearer Token</strong> debe aplicar para una cuenta de desarrollo, en la siguiente página:<br /> 
+                                <a href="https://developer.twitter.com/en/apply-for-access" target="_blank">https://developer.twitter.com/en/apply-for-access</a>
+                            </p>
+                            <p>
+                                Una vez obtenida la <strong>Bearer Token</strong>, se debe configurar el plugin en  <strong>Ajustes</strong> > <strong>Tweets</strong>
+                                <img src="img/img3.png" class="img-fluid mt-3"><br />
+                                Una vez que ingresamos a este menú, vemos la siguiente pantalla:<br />
+                                <img src="img/img4.png" class="img-fluid mt-3"><br />
+                                En el campo con la etiqueta <strong>Bearer Token</strong>, agregamos el token generado en la cuenta de desarrollo.<br />
+                                En el campo con la etiqueta <strong>Show in</strong>, incluimos el slug del post type donde vamos a mostrar los tweets. Por ejemplo, en este caso, mostramos los tweets en las Entradas.
+                            </p>
+                            <p>
+                                La siguiente parte de la configuración se realiza en las entradas individuales que vayamos creando, en el menú de la columna derecha de cada entrada, con el plugin activo, encontramos el campo <strong>Hashtag</strong>:<br />
+                                <img src="img/img5.png" class="img-fluid mt-3"><br />
+                                En este campo agregamos el hashtag del cual vamos a mostrar tweets sin el signo <strong>#</strong> (numera o almohadilla).
+                            </p>
+                            <p>
+                                Con esta configuración realizada, ya podemos mostrar los tweets dentro de la entrada que necesitemos. Cabe aclarar que se puede usar solo en la entrada en que fue configurado.
+                            </p>
+                        </div>
+                        <hr class="mt-5 mb-5">
+                        <div id="front">
+                            <h4>ostrar Tweets en Front</h4>
+                            <p>
+                                Para mostrar la lista de Tweets en el front, debemos agregar el siguiente código php al single.php de nuestro theme principal (o child theme).<br />
+                                <pre> if (function_exists('tweets_search_front')) { echo tweets_search_front()->get_tweets(get_queried_object_id());}</pre>
+                                <br />
+                                Se puede agregar este código dentro de un función a llamar desde un <strong>action</strong> de Wordpress también.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

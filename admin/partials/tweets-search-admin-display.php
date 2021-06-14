@@ -24,6 +24,13 @@
                     <th scope="row"><?php echo __('Bearer Token', 'tweets-search') ?></th>
                     <td><input type="text" name="twitter_token" value="<?php echo get_option('twitter_token')?>" class="regular-text" /></td>
                 </tr>
+                <tr>
+                    <th scope="row"><?php echo __('Show in','tweets-search')?></th>
+                    <td>
+                        <input type="text" name="twitter_post_type" value="<?php echo get_option('twitter_post_type')?>" class="regular-text" />
+                        <span class="smalll"><?php echo __('Slug of post type, ex: post', 'tweets-search')?></span>
+                    </td>
+                </tr>
             </table>
             <p class="submit">
             <button type="submit" name="guardar" class="button button-primary"><?php echo __('Guardar', 'tweets-search') ?></button>

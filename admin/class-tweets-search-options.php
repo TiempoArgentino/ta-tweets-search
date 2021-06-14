@@ -69,6 +69,10 @@ class Tweets_Search_Options
         if(isset($_POST['twitter_token'])){
             update_option('twitter_token',$_POST['twitter_token'],true);
         }
+
+        if(isset($_POST['twitter_post_type'])){
+            update_option('twitter_post_type',$_POST['twitter_post_type'],true);
+        }
     }
 
     /**
@@ -77,7 +81,8 @@ class Tweets_Search_Options
 
     public function post_meta($post_type)
     {
-        $post_types = ['ta_article'];
+        
+        $post_types = [get_option('twitter_post_type')];
 
         if (in_array($post_type, $post_types)) {
             add_meta_box(
