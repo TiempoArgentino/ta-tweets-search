@@ -19,7 +19,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1>TA Subscriptions Plugin</h1>
+                    <h1>Teets Search</h1>
                     <hr>
                 </div>
             </div>
@@ -34,7 +34,7 @@
             <div class="col-12">
                 <h3>Tweet Search</h3>
                 <p>
-                    Tweet Search es una conexión a la API de Twitter para mostrar Tweets relacionados con un hastash en particular.
+                    Tweet Search es una conexión a la API de Twitter para mostrar Tweets relacionados con un hastash en particular. Luego estos tweets se pueden mostrar directamente en las entradas o articulos del sitio.
                 </p>
                 <hr>
             </div>
@@ -130,7 +130,7 @@
                                 Para mostrar la lista de Tweets en el front, debemos agregar el siguiente código php al single.php de nuestro theme principal (o child theme).<br />
                                 <pre> if (function_exists('tweets_search_front')) { echo tweets_search_front()->get_tweets(get_queried_object_id());}</pre>
                                 <br />
-                                Se puede agregar este código dentro de un función a llamar desde un <strong>action</strong> de Wordpress también.
+                                Se puede agregar este código dentro de un función a llamar desde un <strong>action</strong> de Wordpress de ser necesario.
                             </p>
                         </div>
                     </div>
