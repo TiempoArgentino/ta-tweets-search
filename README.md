@@ -1,4 +1,4 @@
-# Teets Search
+# Tweets Search
 
 [Docs Español](#spanish) | [Docs English](#english)
 
