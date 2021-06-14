@@ -18,6 +18,7 @@
 <div class="wrap">
     <div class="content">
         <h2><?php echo __('Opciones', 'tweets-search') ?></h2>
+        <p><a href="<?php echo plugins_url('/tweets-search/docs/index.html');?>" target="_blank">Documentación</a></p>
         <form method="post">
             <table class="table-form">
                 <tr>
