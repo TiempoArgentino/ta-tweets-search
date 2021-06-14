@@ -36,14 +36,15 @@ Para configurar el plugin necesitamos la **Bearer Token** de desarrollador de Tw
 Para obtener la **Bearer Token** debe aplicar para una cuenta de desarrollo, en la siguiente página:  
 [https://developer.twitter.com/en/apply-for-access](https://developer.twitter.com/en/apply-for-access)
 
-Una vez obtenida la **Bearer Token**, se debe configurar el plugin en **Ajustes** > **Tweets** ![](img/img3.png)  
+Una vez obtenida la **Bearer Token**, se debe configurar el plugin en **Ajustes** > **Tweets** 
+![img3](docs/img/img3.png)  
 Una vez que ingresamos a este menú, vemos la siguiente pantalla:  
-![](img/img4.png)  
+![img4](docs/img/img4.png)  
 En el campo con la etiqueta **Bearer Token**, agregamos el token generado en la cuenta de desarrollo.  
 En el campo con la etiqueta **Show in**, incluimos el slug del post type donde vamos a mostrar los tweets. Por ejemplo, en este caso, mostramos los tweets en las Entradas.
 
 La siguiente parte de la configuración se realiza en las entradas individuales que vayamos creando, en el menú de la columna derecha de cada entrada, con el plugin activo, encontramos el campo **Hashtag**:  
-![](img/img5.png)  
+![img5](docs/img/img5.png)  
 En este campo agregamos el hashtag del cual vamos a mostrar tweets sin el signo **#** (numera o almohadilla).
 
 Con esta configuración realizada, ya podemos mostrar los tweets dentro de la entrada que necesitemos. Cabe aclarar que se puede usar solo en la entrada en que fue configurado.
