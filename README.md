@@ -13,11 +13,11 @@ Haciendo click en este [enlace](https://tiempoar.com.ar/proyecto-colaborativo/) 
 
 Para instalar el plugin, primero debe clonarlo o descargarlo de este repositorio:
 
-[https://github.com/matezito/tweets-search](https://github.com/matezito/tweets-search)
+[https://github.com/TiempoArgentino/ta-tweets-search](https://github.com/TiempoArgentino/ta-tweets-search
 
 Clonar:
 
-`git clone https://github.com/matezito/tweets-search`
+`git clone https://github.com/TiempoArgentino/ta-tweets-search.git`
 
 Descargar: en la pestaña code boton code (verde) del repositorio, descargar desde **Download ZIP** como se muestra en la imagen:
 
