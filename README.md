@@ -1,18 +1,11 @@
 # Tweets Search
 
-[Docs Español](#spanish) | [Docs English](#english)
-
-**Español**
 
 Este plugin fue desarrollado como parte de una estrategia **Open Source** para medios de todo el mundo basada en el CMS **WordPress**.  
 Haciendo click en este [enlace](https://tiempoar.com.ar/proyecto-colaborativo/) se puede encontrar más información sobre el proyecto, así como las lista de plugins que complementan a este para tener un sitio completamente funcional.
 
-**English**
+[Ver video presentación](https://drive.google.com/file/d/1pYV9rC0f_9a_YZeSkmZ-s3a02Sbx1w5t/view?usp=sharing)
 
-This plugin was developed as part of an **Open Source** strategy for worldwide media based on the CMS **WordPress**.
-By clicking on this [link](https://tiempoar.com.ar/proyecto-colaborativo/) you can find more information about the project, as well as the list of complements that complement it to have a fully functional site.
-
-### <a name="spanish">Docs Español</a>
 
 **Tweet Search** es una conexión a la **API de Twitter** para mostrar Tweets relacionados con un hastash en particular. Luego estos tweets se pueden mostrar directamente en las entradas o articulos del sitio.
 
@@ -72,6 +65,3 @@ if (function_exists('tweets_search_front')) {
 ```
 
 Se puede agregar este código dentro de un función a llamar desde un **action** de Wordpress de ser necesario.
-
-
- ### <a name="english">Docs English</a>
