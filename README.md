@@ -13,7 +13,7 @@ Haciendo click en este [enlace](https://tiempoar.com.ar/proyecto-colaborativo/) 
 
 Para instalar el plugin, primero debe clonarlo o descargarlo de este repositorio:
 
-[https://github.com/TiempoArgentino/ta-tweets-search](https://github.com/TiempoArgentino/ta-tweets-search
+[https://github.com/TiempoArgentino/ta-tweets-search](https://github.com/TiempoArgentino/ta-tweets-search)
 
 Clonar:
 
